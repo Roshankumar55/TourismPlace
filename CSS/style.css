@@ -1,0 +1,149 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logotitle {
+    height: 35px;
+    width: 35px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 65%;
+}
+
+@media (max-width: 60em) {
+    body {
+        padding: 3rem;
+    }
+}
+
+.grid {
+    display: grid;
+    width: 118rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /* align-items: start; */
+}
+
+@media (max-width: 60em) {
+    .grid {
+        grid-gap: 3rem;
+    }
+}
+
+.grid__item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.grid__item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 3rem 3rem;
+}
+
+.card__header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.card__text {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+
+.card__btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #e6ecff;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card__btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.card__btn:hover,
+.card__btn:active {
+    background-color: #dce4ff;
+}
+
+.card__btn:hover span,
+.card__btn:active span {
+    margin-left: 1.5rem;
+}
+
+#contact {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+.contact-us {
+    color: white;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.contact-us img {
+    height: 50px;
+    width: 55px;
+}
+
+.contact-us div a {
+    size: 50px;
+}
+
+
+/* footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+} */
+
+.center {
+    color: black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
